@@ -1,4 +1,4 @@
-import { MapPin, Mail, Phone, Youtube, Instagram, Facebook, ArrowUpRight } from "lucide-react";
+import { MapPin, Mail, Phone, MessageCircle, Youtube, Instagram, Facebook, ArrowUpRight } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const Footer = () => (
@@ -126,20 +126,31 @@ const Footer = () => (
 
             <div className="space-y-3 pt-2 border-t border-white/5">
               <a
-                href="tel:+919217175260"
+                href="https://api.whatsapp.com/send/?phone=918586844718&text=Hi%2C+I+want+to+know+more+about+Skin+Aura+Skill+Academy+courses.&type=phone_number&app_absent=0"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-green-500/10 border border-green-500/20 text-xs sm:text-sm font-bold text-green-400 hover:bg-green-500/20 hover:border-green-500/30 transition-all duration-300 hover:scale-102 hover:shadow-[0_0_15px_rgba(34,197,94,0.15)]"
               >
-                <Phone className="h-4 w-4 shrink-0" />
-                +91 92171 75260
+                <MessageCircle className="h-4 w-4 shrink-0 fill-green-400/10" />
+                +91 85868 44718 (WhatsApp)
               </a>
               
-              <a
-                href="tel:+918586844718"
-                className="flex items-center gap-3 text-xs text-white/40 hover:text-white/60 transition-colors pl-1 font-light"
-              >
-                <Phone className="h-3.5 w-3.5 shrink-0 text-accent/50" />
-                +91 85868 44718
-              </a>
+              <div className="flex flex-col gap-2 pl-1 pt-1">
+                <a
+                  href="tel:+918586844718"
+                  className="flex items-center gap-3 text-xs text-white/40 hover:text-white/60 transition-colors font-light"
+                >
+                  <Phone className="h-3.5 w-3.5 shrink-0 text-accent/50" />
+                  Call: +91 85868 44718
+                </a>
+                <a
+                  href="tel:+919217175260"
+                  className="flex items-center gap-3 text-xs text-white/40 hover:text-white/60 transition-colors font-light"
+                >
+                  <Phone className="h-3.5 w-3.5 shrink-0 text-accent/50" />
+                  Call: +91 92171 75260
+                </a>
+              </div>
             </div>
           </div>
         </div>

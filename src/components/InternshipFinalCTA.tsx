@@ -38,7 +38,7 @@ const InternshipFinalCTA = () => (
           </Button>
           <Button size="lg" variant="outline" asChild className="w-full sm:w-auto text-xs sm:text-sm font-bold uppercase tracking-wider px-8 py-6 rounded-full bg-white hover:bg-black/5 border-accent text-accent transition-transform duration-300 hover:scale-102">
             <a
-              href="https://wa.me/919050224433?text=Hi%2C%20I%20want%20to%20apply%20for%20the%20Skin%20Therapist%20Internship%20Program"
+              href="https://api.whatsapp.com/send/?phone=918586844718&text=Hi%2C+I+want+to+know+more+about+Skin+Aura+Skill+Academy+courses.&type=phone_number&app_absent=0"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2"

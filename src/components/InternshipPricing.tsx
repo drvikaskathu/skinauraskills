@@ -144,7 +144,7 @@ const InternshipPricing = () => (
                 asChild
               >
                 <a
-                  href="https://wa.me/919050224433?text=Hi%2C%20I%20want%20to%20know%20more%20about%20the%20Internship%20Program"
+                  href="https://api.whatsapp.com/send/?phone=918586844718&text=Hi%2C+I+want+to+know+more+about+Skin+Aura+Skill+Academy+courses.&type=phone_number&app_absent=0"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
