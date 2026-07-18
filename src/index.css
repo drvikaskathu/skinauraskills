@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Premium Ivory Medical Spa Theme — Light Clinical Luxury */
+    --background: 40 25% 98%;      /* #FCFAF7 */
+    --foreground: 260 18% 11%;    /* #1C1822 */
+
+    --card: 0 0% 100%;             /* #FFFFFF */
+    --card-foreground: 260 18% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 260 18% 11%;
+
+    /* Vivid medical rose-pink */
+    --primary: 342 75% 51%;        /* #D92B60 */
+    --primary-foreground: 40 25% 98%;
+
+    /* Soft warm cream-beige for panels */
+    --secondary: 45 20% 95%;      /* #F6F4EE */
+    --secondary-foreground: 342 75% 51%;
+
+    --muted: 345 8% 94%;           /* #F3EFEF */
+    --muted-foreground: 260 8% 42%;/* #6A6570 */
+
+    /* Champagne gold accent */
+    --accent: 37 65% 45%;          /* #C08728 */
+    --accent-foreground: 40 25% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 345 8% 91%;          /* #EAE6E8 */
+    --input: 345 8% 91%;
+    --ring: 342 75% 51%;
+
+    --radius: 1rem;
+
+    /* Custom color codes */
+    --gold: 37 65% 45%;
+    --gold-light: 37 65% 80%;
+    --rose-gold: 20 60% 60%;
+  }
+
+  .dark {
+    /* Kept clean light theme variables by default */
+    --background: 40 25% 98%;
+    --foreground: 260 18% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 260 18% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 260 18% 11%;
+    --primary: 342 75% 51%;
+    --primary-foreground: 40 25% 98%;
+    --secondary: 45 20% 95%;
+    --secondary-foreground: 342 75% 51%;
+    --muted: 345 8% 94%;
+    --muted-foreground: 260 8% 42%;
+    --accent: 37 65% 45%;
+    --accent-foreground: 40 25% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 345 8% 91%;
+    --input: 345 8% 91%;
+    --ring: 342 75% 51%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html, body {
+    @apply bg-background text-foreground font-sans;
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+  }
+}
+
+@layer utilities {
+  /* Premium Light-Mode Glassmorphism */
+  .glass-card {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  .glass-card-hover {
+    @apply transition-all duration-300;
+  }
+  
+  .glass-card-hover:hover {
+    border-color: rgba(192, 135, 40, 0.3);
+    box-shadow: 0 12px 35px -10px rgba(192, 135, 40, 0.1);
+    transform: translateY(-3px);
+  }
+
+  /* Luxurious Contrast Gradients for Light Mode */
+  .text-gradient-gold {
+    background: linear-gradient(135deg, #8E5C0D 0%, #C08728 50%, #513202 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .text-gradient-rose {
+    background: linear-gradient(135deg, #A0123D 0%, #D92B60 50%, #680521 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .text-gradient-dark {
+    background: linear-gradient(135deg, #1C1822 0%, #3B3447 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
