@@ -146,7 +146,7 @@ export default function ClinicWorkshops() {
               {/* Action Button Footer */}
               <div className="p-6 pt-0">
                 <Button size="sm" className="w-full py-5 rounded-full text-xs font-bold uppercase tracking-wider bg-primary hover:bg-primary/95 text-primary-foreground shadow-sm transition-all duration-300" asChild>
-                  <a href="#enroll-form">
+                  <a href="https://api.whatsapp.com/send/?phone=918586844718&text=Hi%2C+I+want+to+know+more+about+Skin+Aura+Skill+Academy+courses.&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
                     Inquire About Workshop
                   </a>
                 </Button>
@@ -157,7 +157,7 @@ export default function ClinicWorkshops() {
 
         <div className="text-center mt-12 md:mt-16">
           <Button size="lg" variant="outline" asChild className="border-accent text-accent hover:bg-accent hover:text-white px-8 py-6 rounded-full text-xs sm:text-sm font-bold uppercase tracking-wider transition-all duration-300">
-            <a href="#enroll-form" className="flex items-center gap-2">
+            <a href="https://api.whatsapp.com/send/?phone=918586844718&text=Hi%2C+I+want+to+know+more+about+Skin+Aura+Skill+Academy+courses.&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
               Request Full Curriculum <ArrowRight className="h-4.5 w-4.5 animate-pulse" />
             </a>
           </Button>
