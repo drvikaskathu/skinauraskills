@@ -12,8 +12,8 @@ const features = [
     title: "Expert Faculty",
     desc: "Learn directly from Dr Jasdeep Kaur with 15+ years of real clinical dermatology practice.",
     tag: "15+ Yrs Exp",
-    color: "from-amber-500/15 to-accent/5 border-accent/20 text-accent",
-    glow: "hover:shadow-amber-500/5",
+    color: "from-accent/15 to-accent/5 border-accent/20 text-accent",
+    glow: "hover:shadow-accent/5",
     imgPos: "object-top",
   },
   {
@@ -22,8 +22,8 @@ const features = [
     title: "Learn Anytime",
     desc: "Access HD video modules, quizzes, and curriculum at your own pace via our premium responsive LMS.",
     tag: "24/7 Access",
-    color: "from-indigo-500/15 to-violet-500/5 border-indigo-500/20 text-indigo-700",
-    glow: "hover:shadow-indigo-500/5",
+    color: "from-primary/15 to-primary/5 border-primary/20 text-primary",
+    glow: "hover:shadow-primary/5",
     imgPos: "object-left-top",
   },
   {
@@ -32,8 +32,8 @@ const features = [
     title: "Hands-On Practice",
     desc: "Gain clinical confidence working with live patients, medical lasers, and real clinical workflows.",
     tag: "100% Practical",
-    color: "from-rose-500/15 to-primary/5 border-primary/20 text-primary",
-    glow: "hover:shadow-rose-500/5",
+    color: "from-accent/15 to-accent/5 border-accent/20 text-accent",
+    glow: "hover:shadow-accent/5",
     imgPos: "object-center",
   },
   {
@@ -42,14 +42,14 @@ const features = [
     title: "500+ Alumni",
     desc: "Join a premium community of successfully placed skin therapists and medical practitioners.",
     tag: "Career Ready",
-    color: "from-emerald-500/15 to-green-500/5 border-emerald-500/20 text-emerald-700",
-    glow: "hover:shadow-emerald-500/5",
+    color: "from-primary/15 to-primary/5 border-primary/20 text-primary",
+    glow: "hover:shadow-primary/5",
     imgPos: "object-center",
   },
 ];
 
 const FeatureStrip = () => (
-  <section className="relative py-10 md:py-16 bg-background z-20 overflow-hidden">
+  <section className="relative py-10 md:py-16 bg-[hsl(40_20%_96%)] z-20 overflow-hidden border-t border-b border-black/5">
     {/* Soft glowing ambient background blobs */}
     <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-72 h-72 bg-accent/5 blur-[100px] pointer-events-none" />
     <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-80 h-80 bg-primary/5 blur-[120px] pointer-events-none" />

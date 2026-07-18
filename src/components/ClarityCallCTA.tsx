@@ -35,7 +35,7 @@ const paths = [
 ];
 
 const ClarityCallCTA = () => (
-  <section className="py-10 md:py-16 bg-background relative overflow-hidden">
+  <section className="py-10 md:py-16 bg-[hsl(40_20%_96%)] border-t border-b border-black/5 relative overflow-hidden">
     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] rounded-full bg-accent/5 blur-[120px] pointer-events-none" />
 
     <div className="container mx-auto px-4 md:px-8 max-w-6xl relative z-10">

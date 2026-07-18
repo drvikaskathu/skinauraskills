@@ -8,7 +8,7 @@ const plans = [
     price: "₹34,999",
     badge: null,
     applyLink: "https://learn.skinauraskillacademy.com/courses/15-Days-Intensive-Clinical-Cosmetology-Internship-69e1f0c66796fbaa62bf0c43",
-    applyButtonClass: "bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white border-0 shadow-sm shadow-amber-500/10",
+    applyButtonClass: "bg-accent hover:bg-accent/90 text-white border-0 shadow-sm",
     features: [
       "Fast-track hands-on exposure",
       "Basic to intermediate procedures",
@@ -21,7 +21,7 @@ const plans = [
     price: "₹49,999",
     badge: "Most Recommended",
     applyLink: "https://learn.skinauraskillacademy.com/courses/1-Month-Advanced-Aesthetic-Internship-69e1f59a5b09ebe2717c4c83",
-    applyButtonClass: "bg-gradient-to-r from-primary to-rose-600 hover:from-primary/95 hover:to-rose-700 text-white border-0 shadow-md shadow-primary/25",
+    applyButtonClass: "bg-primary hover:bg-primary/95 text-white border-0 shadow-md shadow-primary/20",
     features: [
       "Deeper clinical practice",
       "Advanced procedures & confidence building",
@@ -34,7 +34,7 @@ const plans = [
     price: "₹69,999",
     badge: "Best Value & Career Path",
     applyLink: "https://learn.skinauraskillacademy.com/courses/2-Months-Pro-Job-Ready-Skin-Therapist-Internship-69e1f70c9c7e7867ab1886e2",
-    applyButtonClass: "bg-gradient-to-r from-accent to-amber-500 hover:from-accent hover:to-amber-600 text-white border-0 shadow-lg shadow-accent/25",
+    applyButtonClass: "bg-accent hover:bg-accent/90 text-white border-0 shadow-sm",
     features: [
       "Complete job-ready skin therapist path",
       "Maximum real clinical patient exposure",
@@ -45,7 +45,7 @@ const plans = [
 ];
 
 const InternshipPricing = () => (
-  <section id="internship-pricing" className="py-10 md:py-16 bg-background relative overflow-hidden" aria-label="Internship Pricing Plans">
+  <section id="internship-pricing" className="py-10 md:py-16 bg-[hsl(40_20%_96%)] border-t border-b border-black/5 relative overflow-hidden" aria-label="Internship Pricing Plans">
     {/* Soft light glow */}
     <div className="absolute bottom-1/4 right-1/4 translate-x-1/2 translate-y-1/2 w-[350px] h-[350px] rounded-full bg-accent/5 blur-[100px] pointer-events-none" />
 
