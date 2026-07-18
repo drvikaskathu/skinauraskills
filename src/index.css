@@ -127,3 +127,21 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Ensure all small paragraphs are at least 1rem (16px) for optimal readability */
+p.text-xs,
+p.text-sm,
+p[class*="text-xs"],
+p[class*="text-sm"],
+p[class*="text-[9px]"],
+p[class*="text-[10px]"],
+p[class*="text-[11px]"],
+p[class*="text-[12px]"],
+p[class*="text-[13px]"],
+p[class*="text-[14px]"],
+p[class*="text-[1.8vw]"],
+p[class*="text-[2vw]"],
+p[class*="text-[2.2vw]"],
+p[class*="text-[1.2vw]"] {
+  font-size: 1rem !important;
+}
