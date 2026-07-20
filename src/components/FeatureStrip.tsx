@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { Award, Monitor, FileCheck, Users, Sparkles } from "lucide-react";
 import drJasdeep from "@/assets/dr-jasdeep-hero.jpg";
-import lmsMockup from "@/assets/lms-mockup.png";
-import handsOn from "@/assets/training-photo-1.jpg";
+import lmsMockup from "@/assets/img7.jpg";
+import handsOn from "@/assets/internship-hero.png";
 import alumniTeam from "@/assets/team-photo.png";
 
 const features = [
@@ -77,7 +77,7 @@ const FeatureStrip = () => (
                   className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter brightness-100 ${f.imgPos}`}
                   loading="lazy"
                 />
-                
+
                 {/* Floating Icon badge on top of image */}
                 <div className={`absolute top-4 left-4 z-20 flex items-center justify-center w-10 h-10 rounded-xl bg-white/95 backdrop-blur border border-white/20 shadow-md transition-all duration-500 group-hover:scale-110`}>
                   <div className={`flex items-center justify-center w-full h-full rounded-xl bg-gradient-to-br ${f.color}`}>

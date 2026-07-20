@@ -15,10 +15,10 @@ const Footer = () => (
         {/* Brand Column */}
         <div className="space-y-6">
           <div className="flex items-center">
-            <img 
-              src={logo} 
-              alt="Skin Aura Skill Academy" 
-              className="h-14 w-auto object-contain transition-all duration-500 hover:scale-105 hover:rotate-1" 
+            <img
+              src={logo}
+              alt="Skin Aura Skill Academy"
+              className="h-14 w-auto object-contain transition-all duration-500 hover:scale-105 hover:rotate-1"
             />
           </div>
           <p className="text-xs sm:text-sm text-foreground/50 leading-relaxed max-w-xs font-light">
@@ -134,7 +134,7 @@ const Footer = () => (
                 <MessageCircle className="h-4 w-4 shrink-0 fill-green-500/10" />
                 +91 85868 44718 (WhatsApp)
               </a>
-              
+
               <div className="flex flex-col gap-2 pl-1 pt-1">
                 <a
                   href="tel:+918586844718"
@@ -163,10 +163,10 @@ const Footer = () => (
             © {new Date().getFullYear()} Skin Aura Skill Academy. All rights reserved.
           </p>
           <p className="text-[10px] text-foreground/30 font-light tracking-wide">
-            Designed for excellence in Medical Cosmetology & Aesthetic Medicine.
+            Designed by wavetechify.
           </p>
         </div>
-        
+
         {/* Rounded Map Container - elegant & centered next to text, or clean responsive fit */}
         <div className="w-full md:w-96 h-40 rounded-2xl overflow-hidden border border-black/10 shadow-[0_8px_30px_rgba(0,0,0,0.05)] shrink-0 transition-all duration-300 hover:border-primary/20 hover:shadow-[0_8px_30px_rgba(217,43,96,0.1)]">
           <iframe

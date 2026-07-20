@@ -2,49 +2,49 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Sparkles, Sun, Scissors, Droplets, FlaskConical, Clock, Star } from "lucide-react";
 
-import acneImg from "@/assets/acne-treatment.png";
+import acneImg from "@/assets/img5.jpg";
 import pigmentationImg from "@/assets/pigmentation-treatment.png";
 import laserImg from "@/assets/laser-hair-reduction.png";
 import prpImg from "@/assets/prp-hair-therapy.png";
-import peelsImg from "@/assets/chemical-peels.png";
+import peelsImg from "@/assets/img6.jpg";
 import antiAgingImg from "@/assets/anti-aging-procedures.png";
 
 const services = [
-  { 
-    icon: Sparkles, 
+  {
+    icon: Sparkles,
     img: acneImg,
-    title: "Acne Treatment", 
-    desc: "Master clinical extraction, high-frequency therapies, and custom topical regimens for severe acne grades." 
+    title: "Acne Treatment",
+    desc: "Master clinical extraction, high-frequency therapies, and custom topical regimens for severe acne grades."
   },
-  { 
-    icon: Sun, 
+  {
+    icon: Sun,
     img: pigmentationImg,
-    title: "Pigmentation Treatment", 
-    desc: "Learn safe chemical peeling, Q-Switch laser calibration, and barrier repair protocols for melasma and PIH." 
+    title: "Pigmentation Treatment",
+    desc: "Learn safe chemical peeling, Q-Switch laser calibration, and barrier repair protocols for melasma and PIH."
   },
-  { 
-    icon: Scissors, 
+  {
+    icon: Scissors,
     img: laserImg,
-    title: "Laser Hair Reduction", 
-    desc: "Get hands-on control with industry-standard diode and Soprano Ice Platinum systems for all skin types." 
+    title: "Laser Hair Reduction",
+    desc: "Get hands-on control with industry-standard diode and Soprano Ice Platinum systems for all skin types."
   },
-  { 
-    icon: Droplets, 
+  {
+    icon: Droplets,
     img: prpImg,
-    title: "PRP Hair Therapy", 
-    desc: "Learn scalp growth factor delivery, sterile phlebotomy, centrifuge operation, and hair restoration theory." 
+    title: "PRP Hair Therapy",
+    desc: "Learn scalp growth factor delivery, sterile phlebotomy, centrifuge operation, and hair restoration theory."
   },
-  { 
-    icon: FlaskConical, 
+  {
+    icon: FlaskConical,
     img: peelsImg,
-    title: "Chemical Peels", 
-    desc: "Understand acid concentrations, application techniques, neutralizing chemistry, and skin prep for glycolic, salicylic, and yellow peels." 
+    title: "Chemical Peels",
+    desc: "Understand acid concentrations, application techniques, neutralizing chemistry, and skin prep for glycolic, salicylic, and yellow peels."
   },
-  { 
-    icon: Clock, 
+  {
+    icon: Clock,
     img: antiAgingImg,
-    title: "Anti-Aging Procedures", 
-    desc: "Observe clinical radiofrequency (MNRF), skin tightening therapies, anti-aging serums infusion, and age management planning." 
+    title: "Anti-Aging Procedures",
+    desc: "Observe clinical radiofrequency (MNRF), skin tightening therapies, anti-aging serums infusion, and age management planning."
   },
 ];
 

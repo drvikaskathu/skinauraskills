@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import drJasdeep from "@/assets/dr-jasdeep-hero.jpg";
+import drJasdeep from "@/assets/hero-img.jpg";
 import logo from "@/assets/logo.png";
 import { ArrowRight, Sparkles, ShieldCheck, Star, Award } from "lucide-react";
 
@@ -57,7 +57,7 @@ const HeroSection = () => (
       {/* Premium Left Content Panel */}
       <div className="md:col-span-7 relative overflow-hidden flex flex-col justify-center py-4 md:py-0 text-left">
         <FloatingLogos />
-        
+
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -121,7 +121,7 @@ const HeroSection = () => (
       <div className="md:col-span-5 relative flex justify-center mt-8 md:mt-0">
         {/* Subtle decorative glowing backgrounds */}
         <div className="absolute inset-0 bg-gradient-to-tr from-accent/10 to-primary/10 rounded-[2.5rem] rotate-3 scale-95 blur-sm opacity-50 z-0 pointer-events-none" />
-        
+
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -131,7 +131,7 @@ const HeroSection = () => (
           {/* Subtle overlay */}
           <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-80 z-10 pointer-events-none" />
           <div className="absolute inset-2 border border-white/20 rounded-[1.75rem] z-20 pointer-events-none" />
-          
+
           <img
             src={drJasdeep}
             alt="Dr Jasdeep Kaur – Founder, Skin Aura Skill Academy, Aesthetic Dermatology Training"
