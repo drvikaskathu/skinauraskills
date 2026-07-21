@@ -6,7 +6,7 @@ import {
 import clinicalImg from "@/assets/training-photo-5.jpg";
 import faceImg from "@/assets/training-photo-2.jpg";
 import hairImg from "@/assets/hair-zone.png";
-import bodyImg from "@/assets/training-machine-2.jpg";
+import bodyImg from "@/assets/machine.png";
 
 const clinicalItems = [
   { icon: Stethoscope, text: "Live patient consultation & case handling" },
@@ -26,7 +26,7 @@ const zones = [
 const ProgramStructure = () => (
   <section className="py-10 md:py-16 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[hsl(40_20%_96%)] to-background border-t border-black/5 border-b border-black/5" aria-label="Program Structure – Clinical Internship Training">
     <div className="container mx-auto px-4 md:px-8 max-w-6xl relative z-10">
-      
+
       {/* Flagship Program Intro card */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -35,16 +35,16 @@ const ProgramStructure = () => (
         className="max-w-6xl mx-auto glass-card border-black/5 rounded-[2.5rem] p-8 md:p-12 shadow-sm relative bg-white mb-16"
       >
         <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full pointer-events-none" />
-        
+
         <span className="text-primary text-xs font-bold uppercase tracking-[0.2em] flex items-center gap-1.5 mb-2">
           <Star className="h-4.5 w-4.5 text-primary fill-primary animate-pulse" /> Our Flagship Program
         </span>
-        
+
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif text-foreground mt-3 mb-6 tracking-tight leading-snug">
           Skin Therapist Internship Program – <br />
           <span className="text-gradient-gold font-bold">Clinical & Zone-Based Training</span>
         </h2>
-        
+
         <div className="space-y-4 text-foreground/85 text-xs sm:text-sm sm:text-base leading-relaxed">
           <p>
             This advanced <strong>internship program at SkinAura Skill Academy</strong> is designed for aspiring skin therapists
@@ -76,7 +76,7 @@ const ProgramStructure = () => (
 
       {/* Clinical Training Grid Block */}
       <div className="grid lg:grid-cols-12 gap-10 items-center max-w-6xl mx-auto mb-20">
-        
+
         {/* Left Column: Topics list */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}
@@ -112,7 +112,7 @@ const ProgramStructure = () => (
             {/* Overlay and double border */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-85 z-10 pointer-events-none" />
             <div className="absolute inset-2 border border-primary/20 rounded-[1.75rem] z-20 pointer-events-none" />
-            
+
             <img
               src={clinicalImg}
               alt="Clinical Internship Practice"
@@ -166,14 +166,21 @@ const ProgramStructure = () => (
             >
               <div>
                 {/* Zone Image Header */}
-                <div className="aspect-[4/3] overflow-hidden relative bg-muted border-b border-black/5">
+                <div className="aspect-[4/3] overflow-hidden relative bg-muted border-b border-black/5 flex items-center justify-center">
+                  {/* Blurred background to fill the card aspect ratio */}
+                  <img
+                    src={z.image}
+                    alt=""
+                    className="absolute inset-0 w-full h-full object-cover filter blur-lg opacity-40 scale-115 pointer-events-none"
+                  />
+                  {/* Full image shown in containment */}
                   <img
                     src={z.image}
                     alt={`${z.zone} Clinical Training`}
                     loading="lazy"
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-103"
+                    className="relative z-10 w-full h-full object-contain transition-transform duration-700 group-hover:scale-103"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent opacity-75 pointer-events-none" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/15 via-transparent to-transparent opacity-60 z-20 pointer-events-none" />
                 </div>
 
                 {/* Overlapping Icon Badge */}
