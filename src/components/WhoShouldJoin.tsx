@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { GraduationCap, Stethoscope, CheckCircle2, Sparkles, Compass } from "lucide-react";
-import photo1 from "@/assets/training-photo-1.jpg";
+import photo1 from "@/assets/Female_Students.jpg";
 import photo2 from "@/assets/training-photo-2.jpg";
 import photo3 from "@/assets/training-photo-3.jpg";
 
@@ -99,7 +99,7 @@ const WhoShouldJoin = () => (
           <div className="absolute -top-0.5 left-1/2 -translate-x-1/2 px-4 py-1.5 rounded-b-xl bg-primary text-[9px] font-bold uppercase tracking-widest text-white shadow-sm z-30">
             Flagship Program
           </div>
-          
+
           <div>
             {/* Visual Image Header */}
             <div className="aspect-[4/3] overflow-hidden relative bg-muted border-b border-primary/10">

@@ -1,24 +1,24 @@
 import { motion } from "framer-motion";
 import { Zap, Stethoscope, ShieldCheck, Building2, Landmark, MapPin } from "lucide-react";
-import teamPhoto from "@/assets/team-photo.png";
+import teamPhoto from "@/assets/maam-pic.jpg";
 import trainingPhoto5 from "@/assets/training-photo-5.jpg";
 
 const trustPoints = [
-  { 
-    icon: Zap, 
-    text: "Hands-on calibration of advanced machinery like Soprano Platinum, Q-Switch lasers, Viora contouring, and Vivace MNRF." 
+  {
+    icon: Zap,
+    text: "Hands-on calibration of advanced machinery like Soprano Platinum, Q-Switch lasers, Viora contouring, and Vivace MNRF."
   },
-  { 
-    icon: Stethoscope, 
-    text: "Engage in real patient cases daily, shadowing live diagnosis, patient history taking, and setting customized treatments." 
+  {
+    icon: Stethoscope,
+    text: "Engage in real patient cases daily, shadowing live diagnosis, patient history taking, and setting customized treatments."
   },
-  { 
-    icon: ShieldCheck, 
-    text: "Get supervised 1-on-1 feedback from Dr. Jasdeep Kaur and guest instructors, verifying your clinical techniques." 
+  {
+    icon: ShieldCheck,
+    text: "Get supervised 1-on-1 feedback from Dr. Jasdeep Kaur and guest instructors, verifying your clinical techniques."
   },
-  { 
-    icon: Building2, 
-    text: "Practice in a premium, sterile, state-of-the-art clinical facility located in Sector 43, DLF Phase IV, Gurugram." 
+  {
+    icon: Building2,
+    text: "Practice in a premium, sterile, state-of-the-art clinical facility located in Sector 43, DLF Phase IV, Gurugram."
   },
 ];
 
@@ -28,7 +28,7 @@ const AuthorityTrust = () => (
 
     <div className="container mx-auto px-4 md:px-8 max-w-6xl relative z-10">
       <div className="grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
-        
+
         {/* Left Column: Content & Trust points */}
         <div className="lg:col-span-7 space-y-8 text-left order-2 lg:order-1">
           <motion.div

@@ -3,7 +3,7 @@ import { Award, Monitor, FileCheck, Users, Sparkles } from "lucide-react";
 import drJasdeep from "@/assets/dr-jasdeep-hero.jpg";
 import lmsMockup from "@/assets/img7.jpg";
 import handsOn from "@/assets/internship-hero.png";
-import alumniTeam from "@/assets/team-photo.png";
+import alumniTeam from "@/assets/feature_maam.jpg";
 
 const features = [
   {

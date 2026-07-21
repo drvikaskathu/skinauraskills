@@ -6,12 +6,12 @@ import machine2 from "@/assets/training-machine-2.jpg";
 import machine3 from "@/assets/training-machine-3.jpg";
 import machine4 from "@/assets/training-machine-4.jpg";
 import machine5 from "@/assets/training-machine-5.jpg";
-import photo1 from "@/assets/training-photo-1.jpg";
+import photo1 from "@/assets/Female_Students.jpg";
 import photo2 from "@/assets/training-photo-2.jpg";
 import photo3 from "@/assets/training-photo-3.jpg";
 import photo4 from "@/assets/training-photo-4.jpg";
 import photo5 from "@/assets/training-photo-5.jpg";
-import photo6 from "@/assets/training-photo-6.jpg";
+import photo6 from "@/assets/certificated.jpg";
 
 type GalleryItem = {
   src: string;
@@ -45,10 +45,10 @@ const HandsOnTraining = () => {
       <div className="absolute top-1/4 left-1/4 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] rounded-full bg-accent/5 blur-[120px] pointer-events-none" />
 
       <div className="container mx-auto px-4 md:px-8 max-w-6xl relative z-10">
-        
+
         {/* Top Split Layout: Text/Card on Left, Clinic Collage on Right */}
         <div className="grid lg:grid-cols-12 gap-10 lg:gap-12 items-center mb-20">
-          
+
           {/* Left Column: Heading copy & detail card */}
           <div className="lg:col-span-7 space-y-6 text-left order-2 lg:order-1">
             <motion.div
@@ -77,22 +77,22 @@ const HandsOnTraining = () => {
               className="relative bg-gradient-to-br from-[#FAF8F5] to-white border border-accent/20 rounded-3xl p-6 md:p-8 shadow-sm hover:border-accent/40 transition-all duration-300 overflow-hidden"
             >
               <div className="absolute top-0 right-0 w-24 h-24 bg-accent/5 rounded-bl-full pointer-events-none" />
-              
+
               <div className="flex items-center gap-3 mb-4">
                 <div className="p-2 rounded-xl bg-accent/10 border border-accent/20 text-accent">
                   <Building className="h-5 w-5" />
                 </div>
                 <span className="text-xs font-bold uppercase tracking-wider text-accent">Primary Training Centre</span>
               </div>
-              
+
               <h3 className="text-lg sm:text-xl font-bold text-foreground mb-1">
                 Skin Aura Brain & Spine Neuro Centre
               </h3>
-              
+
               <p className="text-primary text-xs sm:text-sm font-semibold uppercase tracking-wider mb-4">
                 Under Direct Mentorship of Dr Jasdeep Kaur & Dr Vikas Kathuria
               </p>
-              
+
               <a
                 href="https://maps.app.goo.gl/u7P7hBmmfRok9p5N9"
                 target="_blank"
@@ -164,7 +164,7 @@ const HandsOnTraining = () => {
               </div>
             </div>
           </motion.div>
-          
+
         </div>
 
         {/* Dynamic Gallery: Tabs & Filterable Showcase */}
@@ -173,33 +173,30 @@ const HandsOnTraining = () => {
           <div className="flex flex-col sm:flex-row justify-center items-center gap-3 border-b border-black/5 pb-6">
             <button
               onClick={() => setActiveTab("all")}
-              className={`flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-300 ${
-                activeTab === "all"
-                  ? "bg-accent text-white shadow-md shadow-accent/10"
-                  : "bg-white border border-black/5 hover:border-accent/40 text-foreground/75"
-              }`}
+              className={`flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-300 ${activeTab === "all"
+                ? "bg-accent text-white shadow-md shadow-accent/10"
+                : "bg-white border border-black/5 hover:border-accent/40 text-foreground/75"
+                }`}
             >
               <Grid className="h-4 w-4" />
               All Media
             </button>
             <button
               onClick={() => setActiveTab("machines")}
-              className={`flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-300 ${
-                activeTab === "machines"
-                  ? "bg-accent text-white shadow-md shadow-accent/10"
-                  : "bg-white border border-black/5 hover:border-accent/40 text-foreground/75"
-              }`}
+              className={`flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-300 ${activeTab === "machines"
+                ? "bg-accent text-white shadow-md shadow-accent/10"
+                : "bg-white border border-black/5 hover:border-accent/40 text-foreground/75"
+                }`}
             >
               <Zap className="h-4 w-4" />
               Advanced Technology
             </button>
             <button
               onClick={() => setActiveTab("sessions")}
-              className={`flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-300 ${
-                activeTab === "sessions"
-                  ? "bg-accent text-white shadow-md shadow-accent/10"
-                  : "bg-white border border-black/5 hover:border-accent/40 text-foreground/75"
-              }`}
+              className={`flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-300 ${activeTab === "sessions"
+                ? "bg-accent text-white shadow-md shadow-accent/10"
+                : "bg-white border border-black/5 hover:border-accent/40 text-foreground/75"
+                }`}
             >
               <Users className="h-4 w-4" />
               Live Training
