@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { 
   Play, 
@@ -189,6 +189,27 @@ export default function ReelVideosSection() {
     }
   }, [activeReelIndex, isPlaying]);
 
+  const closeModal = useCallback(() => {
+    setActiveReelIndex(null);
+    setVideoProgress(0);
+  }, []);
+
+  const handleNext = useCallback(() => {
+    if (activeReelIndex === null) return;
+    const nextIdx = (activeReelIndex + 1) % reelsData.length;
+    setActiveReelIndex(nextIdx);
+    setIsPlaying(true);
+    setVideoProgress(0);
+  }, [activeReelIndex]);
+
+  const handlePrev = useCallback(() => {
+    if (activeReelIndex === null) return;
+    const prevIdx = (activeReelIndex - 1 + reelsData.length) % reelsData.length;
+    setActiveReelIndex(prevIdx);
+    setIsPlaying(true);
+    setVideoProgress(0);
+  }, [activeReelIndex]);
+
   // Handle key controls for modal (Esc, spacebar, arrows)
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -198,7 +219,7 @@ export default function ReelVideosSection() {
         closeModal();
       } else if (e.key === " ") {
         e.preventDefault();
-        setIsPlaying(!isPlaying);
+        setIsPlaying(prev => !prev);
       } else if (e.key === "ArrowRight" || e.key === "ArrowDown") {
         e.preventDefault();
         handleNext();
@@ -210,31 +231,10 @@ export default function ReelVideosSection() {
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [activeReelIndex, isPlaying]);
+  }, [activeReelIndex, handleNext, handlePrev, closeModal]);
 
   const openModal = (index: number) => {
     setActiveReelIndex(index);
-    setIsPlaying(true);
-    setVideoProgress(0);
-  };
-
-  const closeModal = () => {
-    setActiveReelIndex(null);
-    setVideoProgress(0);
-  };
-
-  const handleNext = () => {
-    if (activeReelIndex === null) return;
-    const nextIdx = (activeReelIndex + 1) % reelsData.length;
-    setActiveReelIndex(nextIdx);
-    setIsPlaying(true);
-    setVideoProgress(0);
-  };
-
-  const handlePrev = () => {
-    if (activeReelIndex === null) return;
-    const prevIdx = (activeReelIndex - 1 + reelsData.length) % reelsData.length;
-    setActiveReelIndex(prevIdx);
     setIsPlaying(true);
     setVideoProgress(0);
   };
