@@ -8,6 +8,9 @@ export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
     port: 8080,
+    watch: {
+      ignored: ["**/src/assets/video/**"],
+    },
     hmr: {
       overlay: false,
     },
